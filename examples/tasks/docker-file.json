@@ -7,7 +7,7 @@
     "workflow": {
         "collect": {
             "metrics": {
-                "/intel/linux/docker/*/cpu_stats/cpu_usage/total_usage":{}
+                "/intel/docker/*/cpu/usage/total_usage":{}
             },
             "config": {
                 "/intel/mock": {
