@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "schedule": {
+    "type": "simple",
+    "interval": "1s"
+  },
+  "workflow": {
+    "collect": {
+      "metrics": {
+        "/intel/docker/5e06711bddc3/stats/cgroups/cpu_stats/cpu_usage/total_usage": {},
+        "/intel/docker/5e06711bddc3/stats/network/eth0/rx_bytes": {}
+      },
+      "config": {},
+      "publish": [
+        {
+          "plugin_name": "mock-file",
+          "config": {
+            "file": "/tmp/snap-docker-file.log"
+          }
+        }
+      ]
+    }
+  }
+}
